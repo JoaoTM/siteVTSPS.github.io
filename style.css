@@ -37,6 +37,19 @@ body { margin: 0; font-family: sans-serif; background-color: #f9f9f9; }
     width: 100%;
 }
 
+.centered-title-policy {
+    text-align: center; 
+    background: linear-gradient(90deg, rgba(4, 102, 151, 1) 0%, rgba(64, 147, 90, 1) 50%, rgba(116, 186, 35, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: inline-block; /* Helps with clipping */
+    width: 100%;
+    font-size: 3rem;
+}
+
 .justify-text {
     text-align: justify; 
     color: #2c3e50;    
@@ -131,4 +144,17 @@ body { margin: 0; font-family: sans-serif; background-color: #f9f9f9; }
     max-width: 100%; /* Prevents the image from being wider than the grid cell */
     height: auto;    /* Maintains aspect ratio */
     max-height: 60px; /* Limits height so all logos look similar in size */
+}
+
+
+.top-banner {
+    background:linear-gradient(90deg, rgba(4, 102, 151, 1) 0%, rgba(64, 147, 90, 1) 50%, rgba(116, 186, 35, 1) 100%);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 32px;
+    font-size: 1.0rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
 }
