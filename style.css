@@ -231,3 +231,23 @@ body { margin: 0; font-family: sans-serif; background-color: #f9f9f9; }
 @media (max-width: 650px) {
     .two-col-cards { grid-template-columns: 1fr; }
 }
+
+.organizer-item {
+    border-top: 1px solid #f0f0f0;
+    padding: 12px 0;
+}
+.organizer-item:first-of-type {
+    border-top: none;
+}
+.organizer-item p {
+    margin: 4px 0;
+    color: #2c3e50;
+}
+.organizer-email a {
+    color: rgba(4, 102, 151, 1);
+    text-decoration: none;
+    font-size: 0.92rem;
+}
+.organizer-email a:hover {
+    text-decoration: underline;
+}
