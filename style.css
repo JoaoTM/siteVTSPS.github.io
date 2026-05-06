@@ -216,3 +216,18 @@ body { margin: 0; font-family: sans-serif; background-color: #f9f9f9; }
 @media (max-width: 650px) {
     .program-grid { grid-template-columns: 1fr; }
 }
+
+.two-col-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+.two-col-cards .map-card {
+    margin: 0;
+    max-width: none;
+}
+@media (max-width: 650px) {
+    .two-col-cards { grid-template-columns: 1fr; }
+}
