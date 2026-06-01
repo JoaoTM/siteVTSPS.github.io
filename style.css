@@ -232,6 +232,17 @@ body { margin: 0; font-family: sans-serif; background-color: #f9f9f9; }
     .two-col-cards { grid-template-columns: 1fr; }
 }
 
+.event-details-list {
+    text-align: left;
+    padding-left: 20px;
+    margin: 0;
+    color: #2c3e50;
+    line-height: 1.7;
+}
+.event-details-list li {
+    margin-bottom: 10px;
+}
+
 .organizer-item {
     border-top: 1px solid #f0f0f0;
     padding: 12px 0;
