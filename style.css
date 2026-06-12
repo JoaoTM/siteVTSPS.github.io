@@ -273,45 +273,13 @@ body { margin: 0; font-family: sans-serif; background-color: #f9f9f9; }
     margin-bottom: 10px;
 }
 
-.presentations-table-wrapper {
-    overflow-x: auto;
-    margin: 0 auto 40px auto;
-    max-width: 600px;
-}
-.presentations-table {
-    width: 100%;
-    border-collapse: collapse;
+.program-single {
+    max-width: 500px;
+    margin: 20px auto 40px auto;
     background: white;
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0 2px 10px rgba(0,0,0,0.07);
-}
-.presentations-table thead tr {
-    background: linear-gradient(90deg, rgba(4,102,151,1) 0%, rgba(64,147,90,1) 50%, rgba(116,186,35,1) 100%);
-    color: white;
-}
-.presentations-table th {
-    padding: 12px 20px;
-    text-align: left;
-    font-size: 0.92rem;
-    letter-spacing: 0.03em;
-}
-.presentations-table td {
-    padding: 10px 20px;
-    color: #2c3e50;
-    font-size: 0.93rem;
-    border-bottom: 1px solid #f0f0f0;
-}
-.presentations-table tbody tr:last-child td {
-    border-bottom: none;
-}
-.presentations-table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-.presentations-table td:first-child {
-    font-weight: 600;
-    color: rgba(4,102,151,1);
-    min-width: 60px;
+    overflow: hidden;
 }
 
 .organizer-item {
