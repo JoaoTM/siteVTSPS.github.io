@@ -237,5 +237,52 @@
         <span>© 2026 - All rights reserved.</span>
     </div>
 </footer>
+<!-- GDPR Cookie Banner -->
+<div id="gdpr-banner" style="
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a1a2e;
+    color: #f0f0f0;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    z-index: 9999;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+">
+    <p style="margin: 0; font-size: 0.9em; flex: 1; min-width: 200px;">
+        This website uses cookies to ensure basic functionality. By continuing to use this site, you agree to our use of cookies in accordance with the 
+        <a href="https://privacy.ieee.org/policies" target="_blank" style="color: #74ba23; text-decoration: underline;">IEEE Privacy Policy</a>.
+    </p>
+    <button onclick="acceptCookies()" style="
+        background-color: #74ba23;
+        color: #fff;
+        border: none;
+        padding: 10px 24px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.9em;
+        font-weight: bold;
+        white-space: nowrap;
+    ">Accept</button>
+</div>
+
+<script>
+    function acceptCookies() {
+        document.getElementById('gdpr-banner').style.display = 'none';
+        localStorage.setItem('gdpr-accepted', 'true');
+    }
+    window.addEventListener('load', function() {
+        if (!localStorage.getItem('gdpr-accepted')) {
+            document.getElementById('gdpr-banner').style.display = 'flex';
+        }
+    });
+</script>
 </body>
 </html>
